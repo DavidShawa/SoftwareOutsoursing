@@ -14,7 +14,7 @@ public class MpGenerator {
 
     private static String absolutePath = "D:\\JAVA\\SoftwareOutsoursing\\src\\main\\java"; // 绝对路径(生成代码放置位置 - 你自己的)
     private static String packageName= "com.example.softwareoutsoursing"; // 包名
-    private static String tableName = "employee,preferences,schedulingrules,store"; // 生成的表名称|  生成多张表代码,输入格式为"t1,t2,t3"(逗号分隔); 需要生成所有表代码,这里设置为空; 单表,输入指定表名 "
+    private static String tableName = "employee,preferences,schedulingrules,store,user"; // 生成的表名称|  生成多张表代码,输入格式为"t1,t2,t3"(逗号分隔); 需要生成所有表代码,这里设置为空; 单表,输入指定表名 "
 
     // 注: tinyInt1isBit=false这个不加的话, 如果你的数据库字段类型为tinyint(1)转成java实体类字段会变成boolean,而不是int
     private static String jdbcUrl = "jdbc:mysql://localhost:3306/a33?useUnicode=true&characterEncoding=utf-8&tinyInt1isBit=false&useSSL=false";
